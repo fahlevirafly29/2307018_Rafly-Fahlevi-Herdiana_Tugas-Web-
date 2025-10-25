@@ -5,23 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>910 Official Store</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi masuk (fade + slide) */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    /* Animasi logo bergetar ringan */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
   <!-- Navbar -->
-  <header class="fixed top-0 z-50 w-full bg-white shadow-md">
+  <header class="fixed top-0 z-50 w-full bg-white shadow-md transition duration-300">
     <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-600">910 Official Store</h1>
+      <h1 class="text-2xl font-bold text-blue-600 hover:scale-105 transition duration-300 cursor-pointer">910 Official Store</h1>
       <ul class="flex space-x-6">
-        <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Beranda</a></li>
-        <li><a href="product.html" class="text-gray-700 hover:text-blue-600 font-medium">Produk</a></li>
-        <li><a href="review.html" class="text-gray-700 hover:text-blue-600 font-medium">Ulasan</a></li>
+        <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Beranda</a></li>
+        <li><a href="product.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Produk</a></li>
+        <li><a href="review.html" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Ulasan</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section class="pt-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+  <section class="pt-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white fade-in-up">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center px-6 py-16">
       <div class="flex-1 space-y-6">
         <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
@@ -31,32 +52,32 @@
           Nyaman, stylish, dan tangguh. Teman setia setiap langkah aktifmu.
         </p>
         <div class="space-x-4">
-          <a href="product.html" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-5 py-3 rounded-lg transition">Lihat Produk</a>
-          <a href="review.html" class="border border-white px-5 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">Lihat Ulasan</a>
+          <a href="product.html" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-5 py-3 rounded-lg transition transform hover:scale-105 duration-300">Lihat Produk</a>
+          <a href="review.html" class="border border-white px-5 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition transform hover:scale-105 duration-300">Lihat Ulasan</a>
         </div>
       </div>
       <div class="flex-1 mt-10 md:mt-0">
         <img src="https://images.seeklogo.com/logo-png/39/1/910nineten-logo-png_seeklogo-398759.png"
-             alt="910 Official Store" class="rounded-xl shadow-lg w-full">
+             alt="910 Official Store" class="rounded-xl shadow-lg w-full float-animation hover:scale-105 transition duration-300">
       </div>
     </div>
   </section>
 
   <!-- Fitur -->
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <h3 class="text-3xl font-bold text-center mb-10">Kenapa Pilih 910 </h3>
+  <section class="max-w-6xl mx-auto px-6 py-16 fade-in-up">
+    <h3 class="text-3xl font-bold text-center mb-10">Kenapa Pilih 910</h3>
     <div class="grid md:grid-cols-3 gap-10 text-center">
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
         <img src="https://png.pngtree.com/png-clipart/20220615/original/pngtree-sneakers-icon-in-simple-style-isolated-on-white-background-png-image_8043934.png" class="w-16 mx-auto mb-4" alt="">
         <h4 class="font-semibold text-lg mb-2">Super Nyaman</h4>
         <p class="text-gray-600 text-sm">Material breathable, ringan, dan fleksibel untuk performa maksimal.</p>
       </div>
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
         <img src="https://png.pngtree.com/png-vector/20220227/ourlarge/pngtree-download-icon-design-downloading-hold-vector-png-image_16176756.jpg" class="w-16 mx-auto mb-4" alt="">
         <h4 class="font-semibold text-lg mb-2">Tahan Lama</h4>
         <p class="text-gray-600 text-sm">Outsole kuat, siap dipakai di segala medan olahraga.</p>
       </div>
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
+      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-2xl transform hover:scale-105 transition duration-500 ease-in-out">
         <img src="https://tse1.mm.bing.net/th/id/OIP.LXVfYkGqZKjMH1rwPyA0EwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-16 mx-auto mb-4" alt="">
         <h4 class="font-semibold text-lg mb-2">Desain Kekinian</h4>
         <p class="text-gray-600 text-sm">Sporty tapi tetap keren untuk aktivitas harianmu.</p>
@@ -65,11 +86,11 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 py-6 mb-0">
+  <footer class="bg-gray-800 py-6 mb-0 fade-in-up">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4 mx-auto max-w-screen-xl items-start mb-6">
       <!-- Brand -->
       <div class="flex flex-col items-start mb-4 lg:mb-0">
-        <h1 class="text-2xl font-semibold text-white">910</h1>
+        <h1 class="text-2xl font-semibold text-white hover:text-yellow-400 transition duration-300 cursor-pointer">910</h1>
         <p class="text-white mt-2">Langkah pasti untuk performa tinggi.</p>
       </div>
 
@@ -77,10 +98,10 @@
       <div class="flex flex-col items-start mb-4 lg:mb-0">
         <h1 class="text-lg font-semibold text-white">Menu</h1>
         <ul>
-          <li class="text-white mt-2"><a href="index.html">Beranda</a></li>
-          <li class="text-white mt-2"><a href="product.html">Produk</a></li>
-          <li class="text-white mt-2"><a href="review.html">Ulasan</a></li>
-          <li class="text-white mt-2"><a href="#">Tentang</a></li>
+          <li class="text-white mt-2 hover:text-yellow-400 transition"><a href="index.html">Beranda</a></li>
+          <li class="text-white mt-2 hover:text-yellow-400 transition"><a href="product.html">Produk</a></li>
+          <li class="text-white mt-2 hover:text-yellow-400 transition"><a href="review.html">Ulasan</a></li>
+          <li class="text-white mt-2 hover:text-yellow-400 transition"><a href="#">Tentang</a></li>
         </ul>
       </div>
 
@@ -97,6 +118,5 @@
       <p class="text-center text-white">&copy; 2025 910. Semua hak dilindungi.</p>
     </div>
   </footer>
-
 </body>
 </html>

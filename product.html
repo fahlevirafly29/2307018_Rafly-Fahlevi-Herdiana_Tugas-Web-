@@ -3,31 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>910 Official Store| Produk</title>
+  <title>910 Official Store | Produk</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fadeInDown {
+      animation: fadeInDown 1s ease-out forwards;
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
+
   <!-- Navbar -->
-  <header class="fixed top-0 z-50 w-full bg-white shadow-md">
+  <header class="fixed top-0 z-50 w-full bg-white shadow-md animate-fadeInDown">
     <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-blue-600">910 Official Store</h1>
       <ul class="flex space-x-6">
-        <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Beranda</a></li>
-        <li><a href="product.html" class="text-gray-700 hover:text-blue-600 font-medium">Produk</a></li>
-        <li><a href="review.html" class="text-gray-700 hover:text-blue-600 font-medium">Ulasan</a></li>
+        <li><a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Beranda</a></li>
+        <li><a href="product.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Produk</a></li>
+        <li><a href="review.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Ulasan</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Produk -->
   <section class="pt-28 pb-16 max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Koleksi Sepatu 910</h2>
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 animate-fadeInDown">Koleksi Sepatu 910</h2>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-      <!-- Produk 1 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\gambar 6.jpg" alt="910 RunnerX" class="rounded-t-xl w-full h-48 object-cover">
+      <!-- Template produk -->
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 0.2s;">
+        <img src="assets/img/gambar 6.jpg" alt="910 RunnerX" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 RunnerX</h3>
           <p class="text-gray-500 text-sm">Sepatu lari ringan untuk kecepatan maksimal.</p>
@@ -35,9 +56,9 @@
         </div>
       </div>
 
-      <!-- Produk 2 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\gambar 9.jpg" alt="910 StreetFlex" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 0.4s;">
+        <img src="assets/img/gambar 9.jpg" alt="910 StreetFlex" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 StreetFlex</h3>
           <p class="text-gray-500 text-sm">Desain kasual untuk aktivitas harian.</p>
@@ -45,9 +66,9 @@
         </div>
       </div>
 
-      <!-- Produk 3 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\gambar 2.jpg" alt="910 TrailMaster" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 0.6s;">
+        <img src="assets/img/gambar 2.jpg" alt="910 TrailMaster" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 TrailMaster</h3>
           <p class="text-gray-500 text-sm">Tangguh di segala medan outdoor.</p>
@@ -55,9 +76,9 @@
         </div>
       </div>
 
-      <!-- Produk 4 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\gambar 3.jpg" alt="910 SprintLite" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 0.8s;">
+        <img src="assets/img/gambar 3.jpg" alt="910 SprintLite" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 SprintLite</h3>
           <p class="text-gray-500 text-sm">Pilihan terbaik untuk latihan cepat dan ringan.</p>
@@ -65,9 +86,9 @@
         </div>
       </div>
 
-      <!-- Produk 5 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\gambar 4.webp" alt="910 UltraGrip" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 1s;">
+        <img src="assets/img/gambar 4.webp" alt="910 UltraGrip" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 UltraGrip</h3>
           <p class="text-gray-500 text-sm">Pegangan kuat untuk performa maksimal.</p>
@@ -75,9 +96,9 @@
         </div>
       </div>
 
-      <!-- Produk 6 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\gambar 5.jpg" alt="910 AirFlow" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 1.2s;">
+        <img src="assets/img/gambar 5.jpg" alt="910 AirFlow" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 AirFlow</h3>
           <p class="text-gray-500 text-sm">Ventilasi sempurna untuk kenyamanan sepanjang hari.</p>
@@ -85,9 +106,9 @@
         </div>
       </div>
 
-      <!-- Produk 7 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\10.jpeg" alt="910 FlexMove" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 1.4s;">
+        <img src="assets/img/10.jpeg" alt="910 FlexMove" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 FlexMove</h3>
           <p class="text-gray-500 text-sm">Fleksibel, ringan, dan stylish.</p>
@@ -95,9 +116,9 @@
         </div>
       </div>
 
-      <!-- Produk 8 -->
-      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
-        <img src="assets\img\11.webp" alt="910 CityRun" class="rounded-t-xl w-full h-48 object-cover">
+      <div class="bg-white rounded-xl shadow hover:shadow-2xl transform hover:-translate-y-2 transition duration-500 opacity-0 animate-fadeInUp"
+           style="animation-delay: 1.6s;">
+        <img src="assets/img/11.webp" alt="910 CityRun" class="rounded-t-xl w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">910 CityRun</h3>
           <p class="text-gray-500 text-sm">Sepatu urban keren untuk gaya aktifmu.</p>
@@ -107,17 +128,14 @@
     </div>
   </section>
 
- 
   <!-- Footer -->
-  <footer class="bg-gray-800 py-6 mb-0">
+  <footer class="bg-gray-800 py-6 mt-8 animate-fadeInUp">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 px-4 mx-auto max-w-screen-xl items-start mb-6">
-      <!-- Brand -->
       <div class="flex flex-col items-start mb-4 lg:mb-0">
         <h1 class="text-2xl font-semibold text-white">910</h1>
         <p class="text-white mt-2">Langkah pasti untuk performa tinggi.</p>
       </div>
 
-      <!-- Menu -->
       <div class="flex flex-col items-start mb-4 lg:mb-0">
         <h1 class="text-lg font-semibold text-white">Menu</h1>
         <ul>
@@ -128,7 +146,6 @@
         </ul>
       </div>
 
-      <!-- Kontak -->
       <div class="flex flex-col items-start mb-4 lg:mb-0">
         <h1 class="text-lg font-semibold text-white">Hubungi Kami</h1>
         <p class="text-white mt-2">Telepon: 0812-3456-7890</p>
